@@ -65,8 +65,8 @@ p {
 
 .main-content {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 8px auto;
+    padding: 5px;
 }
 
 h2 {
@@ -91,6 +91,7 @@ address {
         padding: 10px;
     }
 }
+
 
 #grid {
     height: 35vh;
@@ -138,6 +139,9 @@ address {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
-
+#golden{
+    color: rgba(190, 161, 0, 0.899);
+    font-style:oblique;
+}
 
 
