@@ -12,10 +12,10 @@ header {
     text-align: center;
     padding: 20px;
 }
+
 .dropdown {
     display: inline-block;
     position: relative;
-   
 }
 
 .dropbtn {
@@ -35,9 +35,9 @@ header {
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    max-height: 0; 
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease; 
+    transition: max-height 0.5s ease;
 }
 
 .dropdown-content a {
@@ -52,7 +52,7 @@ header {
 }
 
 .dropdown:hover .dropdown-content {
-    max-height: 150px; 
+    max-height: 170px;
 }
 
 h1 {
@@ -62,7 +62,6 @@ h1 {
 p {
     margin: 5px 0;
 }
-
 
 .main-content {
     max-width: 800px;
@@ -80,6 +79,7 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
+    
 }
 
 address {
@@ -91,6 +91,7 @@ address {
         padding: 10px;
     }
 }
+
 #grid {
     height: 35vh;
     max-height: 35vh;
@@ -99,34 +100,44 @@ address {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3px;
     background: rgb(220, 20, 180);
-  }
-  
-  :where(.left, .center, .right) {
+}
+
+:where(.left, .center, .right) {
     background: navajowhite;
-    transition: 300ms;
-  }
-  
-  :where(.left, .center, .right):hover {
-    background: rgbrgb(220, 20, 180);
-  }
-  
-  #grid:has(.left:hover) {
+    transition:  300ms; 
+}
+
+:where(.left:hover, .center:hover, .right:hover) {
+    background: rgb(220, 20, 180); 
+}
+
+#grid:has(.left:hover) {
     grid-template-columns: 1.3fr 0.5fr 0.5fr;
     overflow: hidden;
-  }
-  
-  #grid:has(.center:hover) {
+}
+
+#grid:has(.center:hover) {
     grid-template-columns: 0.5fr 1.3fr 0.5fr;
-  }
-  #grid:has(.right:hover) {
+}
+
+#grid:has(.right:hover) {
     grid-template-columns: 0.5fr 0.5fr 1.3fr;
-  }
-  .left,.center,.right {overflow:hidden;}
-  .left img,.center img,.right img {
+}
+
+.left,
+.center,
+.right {
+    overflow: hidden;
+}
+
+.left img,
+.center img,
+.right img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
+
 
 
