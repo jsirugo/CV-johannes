@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +21,7 @@ header {
 .dropbtn {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 12px 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -42,7 +42,7 @@ header {
 
 .dropdown-content a {
     color: #333;
-    padding: 12px 16px;
+    padding: 12px 14px;
     text-decoration: none;
     display: block;
 }
@@ -57,10 +57,12 @@ header {
 
 h1 {
     margin: 0;
+
 }
 
 p {
     margin: 5px 0;
+
 }
 
 .main-content {
@@ -76,6 +78,9 @@ h2 {
     margin-top: 20px;
 }
 
+h2.contact {
+    color: rgba(255, 255, 255, 0.764);
+}
 ul {
     list-style-type: none;
     padding: 0;
@@ -99,8 +104,10 @@ address {
     transition: 500ms;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3px;
-    background: rgb(220, 20, 180);
+    gap: 5px;
+    background: rgb(4, 0, 3);
+    border: 5px solid #000;
+    border-radius: 2.5px;
 }
 
 :where(.left, .center, .right) {
@@ -113,16 +120,16 @@ address {
 }
 
 #grid:has(.left:hover) {
-    grid-template-columns: 1.3fr 0.5fr 0.5fr;
+    grid-template-columns: 1.2fr 0.5fr 0.5fr;
     overflow: hidden;
 }
 
 #grid:has(.center:hover) {
-    grid-template-columns: 0.5fr 1.3fr 0.5fr;
+    grid-template-columns: 0.5fr 1.2fr 0.5fr;
 }
 
 #grid:has(.right:hover) {
-    grid-template-columns: 0.5fr 0.5fr 1.3fr;
+    grid-template-columns: 0.5fr 0.5fr 1.2fr;
 }
 
 .left,
@@ -145,3 +152,9 @@ address {
 }
 
 
+#contact {
+    background-color: #4e4d4d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
