@@ -76,7 +76,7 @@ p {
 .main-content {
     max-width: 800px;
     margin: 8px auto;
-    padding: 5px;
+    padding: 20px;
 }
 
 h2 {
@@ -163,6 +163,6 @@ address {
 }
 @media screen and (max-width: 600px) {
     .main-content {
-        padding: 10px;
+        padding: 30px;
     }
 }
