@@ -4,8 +4,6 @@
     padding: 0;
 }
 
-
-
 body {
     
     margin: 0;
@@ -67,7 +65,7 @@ header {
 
 h1 {
     margin: 0;
-
+    font-family:'Times New Roman', Times, serif
 }
 
 p {
@@ -113,25 +111,6 @@ address {
     border: 5px solid #000;
     border-radius: 5px;
 }
-/*
-
-#grid:has(.left:hover) {
-
-    grid-template-columns: 1fr 0.9fr 0.9fr;
-
-}
-
-#grid:has(.center:hover) {
-    grid-template-columns: 0.9fr 1fr 0.9fr;
-
-}
-
-#grid:has(.right:hover) {
-    grid-template-columns: 0.9fr 0.9fr 1fr;
-
-}
-*/
-
 
 .left img,
 .center img,
@@ -162,5 +141,9 @@ address {
 @media screen and (max-width: 600px) {
     .main-content {
         padding: 20px;
+        
+    }
+    #grid{
+        grid-template-columns: 1fr;
     }
 }
